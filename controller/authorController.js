@@ -11,6 +11,7 @@ const authorController = {
             res.status(500).json(err);
         }
     },
+    // GetAuthor
     getAuthor: async(req,res)=>{
         try{
         const author = await Author.find();
