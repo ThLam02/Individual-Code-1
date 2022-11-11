@@ -2,7 +2,8 @@ const bookController = require("../controller/bookController");
 
 const router = require("express").Router();
 
-// ADD Author
+// ADD Book
 router.post("/",bookController.addBooks);
-router.post("/",bookController.getAllBook);
+// GET Book
+router.get("/",bookController.getAllBook);
 module.exports = router;

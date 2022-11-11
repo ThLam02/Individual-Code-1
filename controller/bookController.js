@@ -6,7 +6,7 @@ const bookController = {
         try{
             const newBooks = new Book(req.body);
             const saveBooks = await newBooks.save();
-            res.status(200).json(newBooks);
+            res.status(200).json(saveBooks);
         }catch(err){
             res.status(500).json(err);
         }
