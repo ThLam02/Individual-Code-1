@@ -7,6 +7,9 @@ const AuthorSchema = new mongoose.Schema({
     year:{
         type:Number
     },
+    gender:{
+        type: String
+    },
     books:[
         {
             type:mongoose.Schema.Types.ObjectId,
