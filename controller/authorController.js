@@ -6,9 +6,9 @@ const authorController = {
         try{
             const newAuthor = new Author(req.body);
             const saveAuthor = await newAuthor.save();
-            res.status(200).json(newAuthor);
+            res.status(200).json(saveAuthor);
         }catch(err){
-            res.status(500).json(err)
+            res.status(500).json(err);
         }
     },
     getAuthor: async(req,res)=>{
